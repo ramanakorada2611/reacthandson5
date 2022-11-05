@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import PureComponents from './Components/PureComponents';
 import './App.css';
+import Sample from './Sample';
+import Extra from './Extra';
+import Hoc from './Components/Hoc';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='head'>HANDSON5</h1>
+      <PureComponents/>
+      <Sample/>
+      <Extra/>
+      <Hoc/>
+      <h1><u>Higher Order Components:</u></h1>
+      <p>A higher-order component HOC is an advanced technique in React for reusing component logic.
+      a higher-order component is a function that takes a component and returns a new component.
+      </p>
     </div>
   );
 }
